@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    transition: all ease 0.9s;
+    font-family: Calibri;
+}
+
+body{
+    margin: 0% 10% 0% 10%;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.LOGO{
+    height: 50px;
+    width: 50px;
+}
+
+.CARRITO{
+    height: 30px;
+    width: 30px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;    
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    border: solid 1px black;
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.anuncio{
+    display: flex;
+}
+
+.gris{
+    width: 340px;
+    height: 400px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:950px) {
+    header{
+        
+    }    
+}
