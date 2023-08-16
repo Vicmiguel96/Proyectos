@@ -1,34 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all ease 0.95s;
+    /* transition: all ease 0.95s; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     margin: 0 60px;
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
 }
 
-ul{
+ul {
     display: flex;
     gap: 30px;
     list-style-type: none;
 }
 
-ul a{
+ul a {
     text-decoration: none;
     color: black;
 }
 
-.anuncio{
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+.anuncio {
     width: 100%;
     display: flex;
     position: relative;
@@ -36,7 +40,7 @@ ul a{
     margin-top: 40px;
 }
 
-.gris{
+.gris {
     width: 340px;
     height: 400px;
     background-color: gray;
@@ -46,7 +50,7 @@ ul a{
     left: 604px;
 }
 
-.texto{
+.texto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,7 +60,7 @@ ul a{
     height: 390px;
 }
 
-.texto h1{
+.texto h1 {
     font-weight: 400;
     font-size: 90px;
     line-height: 108.92px;
@@ -64,14 +68,110 @@ ul a{
     text-align: center;
 }
 
-#pc span{
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    align-items: center;
+}
+
+.texto a {
+    display: flex;
+    align-items: center;
+}
+
+.texto a:hover{
+    scale: 1.1;
+    transition: 0.95s;
+    padding-left: 30px;
+}
+
+#pc span {
     color: white;
 }
 
-#celu{
+#celu {
     display: none;
 }
 
-#hola{
+#hola {
     display: none;
+}
+
+@media screen and (max-width:380px) {
+    header ul {
+        display: none;
+    }
+
+    #hola2 {
+        display: none;
+    }
+
+    #hola {
+        display: block;
+    }
+
+    body {
+        margin: 0 25px;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #celu {
+        display: block;
+        display: flex;
+        width: 342px;
+        height: 130px;
+        margin-top: 30px;
+        justify-content: center;
+        flex-shrink: 0;
+
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 23.28px;
+    }
+
+    #celu span {
+        color: #1E1E1E;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 23.28px;
+    }
+
+    .gris {
+        width: 246px;
+        height: 300px;
+        left: 0px;
+        margin-top: 40px;
+    }
+
+    .texto {
+        height: 450px;
+    }
+
+    .texto a {
+        display: flex;
+        width: 295px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-shrink: 0;
+
+        color: #1E1E1E;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 16px;
+        margin-bottom: 50px;
+    }
 }
